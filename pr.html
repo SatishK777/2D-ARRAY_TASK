@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum-Of-2D</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [
+                    [1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]
+                ];
+        let arr2 = [
+                    [1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]
+                ];
+
+        function sumArray(arr1, arr2) {
+            let sum = [];
+            for (let i = 0; i < arr1.length; i++) {
+                sum[i] = [];
+                for (let j = 0; j < arr1[i].length; j++) {
+                    sum[i][j] = arr1[i][j] + arr2[i][j];
+                }
+            }
+            return sum;
+        }
+        let newArray=sumArray(arr1, arr2);
+        console.log(newArray);
+    </script>
+</body>
+
+</html>
